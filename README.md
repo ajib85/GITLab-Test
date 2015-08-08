@@ -1,6 +1,6 @@
 gitimmersion.com/lab_01.html
 
--go to dev folder
+- go to dev folder
 git init
 
  "Reinitialized existing Git repository in xxx/JomWeb/.git/"
@@ -21,7 +21,7 @@ git log
  
  "Reinitialized existing Git repository in xxx/JomWeb/.git/"
  
- -if you have any changes
+ - if you have any changes
  "On branch master
  Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
@@ -31,12 +31,12 @@ git log
 
  no changes added to commit (use "git add" and/or "git commit"  -a")
  
--Commit again
+- Commit again
 
 git add .
 git commit -m "commit 2"
 
--check log
+- check log
 git log 
  
 git gui 
@@ -49,7 +49,7 @@ IN GUI
 git checkout master
 git checkout testui
 
--Check different current unchanged file with latest changed file
+- Check different current unchanged file with latest changed file
 git diff <filename>
 
 git diff index.html
@@ -66,21 +66,21 @@ git diff index.html
  +<h>Selamat Datang ke Bengkel Git 2015 - Master D4</h>
 
  
--Red - line removed
--Green - line added 
+- Red - line removed
+- Green - line added 
 
--If uncommit, "git checkout <filename>" will revert to previous commit.  
+- If uncommit, "git checkout <filename>" will revert to previous commit.  
 
 Git status to know current status, branch. 
 
--Merge branches
-- 1. Enter required branch
+- Merge branches
+- Enter required branch
 git checkout testui
 
 - Merge the current and required branch 
 git merge <branch>
 
--sample result
+- sample result
  "<<<<<<< HEAD
  <h>Selamat Datang ke Bengkel Git 2015 - testui D5</h>
  =======
@@ -91,10 +91,10 @@ git merge <branch>
  -==== : Separator of the conflicts contents.
  ->>>>>> master : Conflicts contents originally from master branch
  
--To handle conflicting file
--- Open the file that conflicts
--- Edit as per required using any tool
--- Then run add and commit again
+- - To handle conflicting file
+- Open the file that conflicts
+- Edit as per required using any tool
+- Then run add and commit again
 
 git add . 
 git commit -m "message"
@@ -102,7 +102,7 @@ git commit -m "message"
 
  "[testui xxxxx] merge"
  
--GIT Connect to Remote Repo GITHUB using HTTPS
+- GIT Connect to Remote Repo GITHUB using HTTPS
 git remote -v
 git remote add origin https://github.com/ajib85/GITLab-Test.git
 git push -all 
@@ -110,7 +110,7 @@ git push -all
  "username:
  password:"
 
--File will be uploaded to GITHUB. If error for first time, try below action and try again. 
+- File will be uploaded to GITHUB. If error for first time, try below action and try again. 
  
 git pull origin master
 git push -all
