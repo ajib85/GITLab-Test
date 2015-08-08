@@ -115,4 +115,6 @@ git push -all
 git pull origin master
 git push -all
 
-
+#Clone
+#To collaborate, add partner(s) inside collaborators. In Github, Settings > Collaborators, insert partner username. 
+git clone <link-of-ssh-https-partner>
